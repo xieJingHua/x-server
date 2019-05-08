@@ -15,10 +15,12 @@ public class Bootstrap {
 //        Server server=new BioSingleThreadServer();
         //多线程阻塞server 可连接多个客户端ServletContainer
         try {
+            //初始化web容器
             ServletContainer.getInstance().init();
         } catch (Exception e) {
             e.printStackTrace();
         }
+        //启动服务器，开启socket监听（tcp)
         Server server = new BioMultipleThreadServer();
         server.start();
     }
