@@ -3,12 +3,17 @@ package com.xiejh.cn;
 import com.xiejh.cn.io.bio.BioMultipleThreadServer;
 import com.xiejh.cn.system.Server;
 import com.xiejh.cn.system.ServletContainer;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Author xiejh
  * Date   2019/4/9 13:31
  **/
 public class Bootstrap {
+
+    private static Logger logger = LoggerFactory.getLogger(Bootstrap.class);
+
 
     public static void main(String[] args) {
         //单线程阻塞server
