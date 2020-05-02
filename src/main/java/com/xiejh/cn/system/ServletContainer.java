@@ -1,6 +1,5 @@
 package com.xiejh.cn.system;
 
-import com.xiejh.cn.Bootstrap;
 import com.xiejh.cn.annotations.RequestMapping;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -72,9 +71,6 @@ public class ServletContainer {
     public void dispatch(HttpRequest request, HttpResponse response) throws IllegalAccessException,
             InstantiationException {
         Class httpServletClass = container.get(request.getUrl());
-        System.out.println("thread:" + Thread.currentThread().getName() + ", url:" + request.getUrl()
-                + ", controller:" + (httpServletClass != null ? httpServletClass.toString() :
-                DefaultHttpServlet.class.toString()));
         if (httpServletClass != null) {
             HttpServlet httpServlet = (HttpServlet) httpServletClass.newInstance();
             httpServlet.service(request, response);

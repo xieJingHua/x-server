@@ -46,7 +46,7 @@ public abstract class BioServer implements Server {
      * @param socket
      */
     protected void handleConnection(Socket socket) {
-        //字类必须重写，否则抛出异常
+        //子类必须重写，否则抛出异常
         throw new UnsupportedOperationException();
     }
 }

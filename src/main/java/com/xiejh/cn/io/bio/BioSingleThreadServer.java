@@ -19,7 +19,11 @@ public class BioSingleThreadServer extends BioServer {
                 pw.println("received info:" + line);
                 pw.flush();
             }
+            Thread.currentThread().sleep(10000);
+            socket.close();
         }catch (IOException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }

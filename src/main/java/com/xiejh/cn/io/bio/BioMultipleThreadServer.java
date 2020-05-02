@@ -14,7 +14,7 @@ import java.util.concurrent.Executors;
  **/
 public class BioMultipleThreadServer extends BioServer {
 
-    protected ExecutorService executorService = Executors.newFixedThreadPool(5);
+    protected ExecutorService executorService = Executors.newFixedThreadPool(1);
 
     @Override
     protected void handleConnection(Socket socket) {
@@ -31,9 +31,13 @@ public class BioMultipleThreadServer extends BioServer {
         private void communicate() {
             try {
                 HttpRequest request=new HttpRequest(socket.getInputStream());
+                if(request.getUrl()==null){
+                    System.out.println("空连接");
+                    return;
+                }
+
                 HttpResponse response=new HttpResponse(socket.getOutputStream());
                 ServletContainer.getInstance().dispatch(request,response);
-                socket.close();
             } catch (Exception e) {
                 e.printStackTrace();
             }

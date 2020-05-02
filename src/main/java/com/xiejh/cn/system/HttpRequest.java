@@ -1,5 +1,7 @@
 package com.xiejh.cn.system;
 
+import com.sun.deploy.util.StringUtils;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Map;
@@ -23,7 +25,9 @@ public class HttpRequest {
         if ((length = is.read(bytes)) > 0) {
             request = new String(bytes, 0, length);
         }
-        System.out.println(request);
+        System.out.println("request" + request);
+        if("".equals(request))
+            return;
         String[] requestArray = request.split("\n");
         String[] firstLines = requestArray[0].split("\\s");
           System.out.println(requestArray[0]);
