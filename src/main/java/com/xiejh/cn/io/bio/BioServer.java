@@ -1,6 +1,8 @@
 package com.xiejh.cn.io.bio;
 
 import com.xiejh.cn.Bootstrap;
+import com.xiejh.cn.system.ApplicationConfig;
+import com.xiejh.cn.system.Constants;
 import com.xiejh.cn.system.Server;
 import com.xiejh.cn.util.LogUtil;
 import org.slf4j.Logger;
@@ -19,7 +21,6 @@ public abstract class BioServer implements Server {
     private static Logger logger = LoggerFactory.getLogger(BioServer.class);
 
 
-    protected static final int PORT = 8090;
 
     /**
      * 启动服务器
@@ -28,7 +29,8 @@ public abstract class BioServer implements Server {
     public void start() {
         ServerSocket server = null;
         try {
-            server = new ServerSocket(PORT);
+            String port = ApplicationConfig.getInstance().getProperty(Constants.PORT);
+            server = new ServerSocket(Integer.valueOf(port));
             logger.info("line:{} - x-server started",LogUtil.getLineNumber());
             while (true) {
                 Socket socket = server.accept();

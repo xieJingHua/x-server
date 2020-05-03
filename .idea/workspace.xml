@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7168df6c-0e78-4d45-a6d5-576bf9a6f633" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiejh/cn/io/nio/Acceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiejh/cn/io/nio/NioServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiejh/cn/io/nio/Reader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiejh/cn/io/nio/Writer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiejh/cn/system/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiejh/cn/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiejh/cn/Bootstrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xiejh/cn/system/HttpRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiejh/cn/system/HttpRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiejh/cn/io/bio/BioMultipleThreadServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiejh/cn/io/bio/BioMultipleThreadServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiejh/cn/io/bio/BioServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiejh/cn/io/bio/BioServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiejh/cn/Bootstrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiejh/cn/Bootstrap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiejh/cn/io/bio/BioMultipleThreadServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiejh/cn/io/bio/BioMultipleThreadServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiejh/cn/io/bio/BioServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiejh/cn/io/bio/BioServer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,10 +68,11 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xiejh.cn.io.nio" />
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -145,7 +156,11 @@
       <workItem from="1557295496426" duration="3026000" />
       <workItem from="1558234596547" duration="7722000" />
       <workItem from="1588390391252" duration="5496000" />
-      <workItem from="1588407113772" duration="5517000" />
+      <workItem from="1588407113772" duration="7831000" />
+      <workItem from="1588433418800" duration="1082000" />
+      <workItem from="1588437555105" duration="1045000" />
+      <workItem from="1588470331093" duration="6308000" />
+      <workItem from="1588505533179" duration="2771000" />
     </task>
     <task id="LOCAL-00001" summary="creaete x-server">
       <created>1555408787845</created>
@@ -168,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588419993246</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update 减少废弃的导入">
+      <created>1588420246178</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1588420246178</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,61 +200,82 @@
     <MESSAGE value="creaete x-server" />
     <MESSAGE value="initial" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="update 减少废弃的导入" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 减少废弃的导入" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1588508022750">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1588508022750" />
     <state x="510" y="258" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1588392948707">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="510" y="258" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1588392948707" />
-    <state x="372" y="6" key="CommitChangelistDialog2" timestamp="1588419992320">
+    <state x="372" y="6" key="CommitChangelistDialog2" timestamp="1588420245277">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1588419992320" />
-    <state width="1493" height="415" key="GridCell.Tab.0.bottom" timestamp="1588419809236">
+    <state x="372" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1588420245277" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1588478701698">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="415" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588419809236" />
-    <state width="1493" height="415" key="GridCell.Tab.0.center" timestamp="1588419809235">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1588478701698" />
+    <state width="1493" height="131" key="GridCell.Tab.0.bottom" timestamp="1588497775040">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="415" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1588419809235" />
-    <state width="1493" height="415" key="GridCell.Tab.0.left" timestamp="1588419809235">
+    <state width="1493" height="131" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588497775040" />
+    <state width="1493" height="131" key="GridCell.Tab.0.center" timestamp="1588497775039">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="415" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1588419809235" />
-    <state width="1493" height="415" key="GridCell.Tab.0.right" timestamp="1588419809235">
+    <state width="1493" height="131" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1588497775039" />
+    <state width="1493" height="131" key="GridCell.Tab.0.left" timestamp="1588497775039">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="415" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588419809235" />
-    <state width="1493" height="415" key="GridCell.Tab.1.bottom" timestamp="1588419809100">
+    <state width="1493" height="131" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1588497775039" />
+    <state width="1493" height="131" key="GridCell.Tab.0.right" timestamp="1588497775039">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="415" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588419809100" />
-    <state width="1493" height="415" key="GridCell.Tab.1.center" timestamp="1588419809099">
+    <state width="1493" height="131" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588497775039" />
+    <state width="1493" height="351" key="GridCell.Tab.1.bottom" timestamp="1588421288557">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="415" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1588419809099" />
-    <state width="1493" height="415" key="GridCell.Tab.1.left" timestamp="1588419809099">
+    <state width="1493" height="351" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588421288557" />
+    <state width="1493" height="351" key="GridCell.Tab.1.center" timestamp="1588421288557">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="415" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1588419809099" />
-    <state width="1493" height="415" key="GridCell.Tab.1.right" timestamp="1588419809100">
+    <state width="1493" height="351" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1588421288557" />
+    <state width="1493" height="351" key="GridCell.Tab.1.left" timestamp="1588421288557">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="415" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1588419809100" />
-    <state x="490" y="154" width="561" height="524" key="StructurePopup" timestamp="1588407604082">
+    <state width="1493" height="351" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1588421288557" />
+    <state width="1493" height="351" key="GridCell.Tab.1.right" timestamp="1588421288557">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="490" y="154" width="561" height="524" key="StructurePopup/0.0.1536.824@0.0.1536.824" timestamp="1588407604082" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1588420123539">
+    <state width="1493" height="351" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1588421288557" />
+    <state x="581" y="123" key="RollbackChangesDialog" timestamp="1588507597259">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1588420123539" />
-    <state x="435" y="72" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1588407618129">
+    <state x="581" y="123" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1588507597259" />
+    <state x="270" y="54" key="SettingsEditor" timestamp="1588506176053">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="435" y="72" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1588407618129" />
+    <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1588506176053" />
+    <state x="490" y="154" width="561" height="524" key="StructurePopup" timestamp="1588506466796">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="490" y="154" width="561" height="524" key="StructurePopup/0.0.1536.824@0.0.1536.824" timestamp="1588506466796" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1588420310221">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1588420310221" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1588507635577">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1588507635577" />
+    <state x="435" y="55" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1588506070705">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="435" y="55" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1588506070705" />
     <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588393625891">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -241,6 +284,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="313" y="148" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1588419114995" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1588505785251">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1588505785251" />
   </component>
   <component name="masterDetails">
     <states>

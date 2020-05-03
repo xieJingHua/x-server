@@ -14,7 +14,7 @@ import java.util.concurrent.Executors;
  **/
 public class BioMultipleThreadServer extends BioServer {
 
-    protected ExecutorService executorService = Executors.newFixedThreadPool(1);
+    protected ExecutorService executorService = Executors.newFixedThreadPool(5);
 
     @Override
     protected void handleConnection(Socket socket) {
