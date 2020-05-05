@@ -32,6 +32,7 @@ public abstract class BioServer implements Server {
             String port = ApplicationConfig.getInstance().getProperty(Constants.PORT);
             server = new ServerSocket(Integer.valueOf(port));
             logger.info("line:{} - x-server started",LogUtil.getLineNumber());
+            logger.info("server start on port:{}",port);
             while (true) {
                 Socket socket = server.accept();
                 logger.debug("a new connection come in!");

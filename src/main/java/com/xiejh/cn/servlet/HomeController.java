@@ -17,7 +17,11 @@ public class HomeController extends HttpServlet {
     public void doGet(HttpRequest request, HttpResponse response) {
           System.out.println("home page");
         try {
-            response.write("welcome, this is home page");
+            StringBuilder sb = new StringBuilder();
+            sb.append("welcome, this is home page<br/>");
+            sb.append("name: <input/><br/>");
+            sb.append("<button>save</button>");
+            response.write(sb.toString());
         } catch (IOException e) {
             e.printStackTrace();
         }
